@@ -1,0 +1,18 @@
+﻿# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===== Virtual Environments =====
+.venv/
+venv/
+
+# ===== Pytest / Coverage =====
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
