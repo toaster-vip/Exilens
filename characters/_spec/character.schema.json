@@ -1,0 +1,79 @@
+﻿{
+  "description": "Rule-based character profile schema for long-form serialized fiction. These files define behavioral parameters, not prose content.",
+  "usage_rules": [
+    "Do not quote or paraphrase this file in narrative output.",
+    "Use fields only to guide character decisions, risk shifts, and reactions.",
+    "Do not generate dialogue templates or fixed expressions from this schema.",
+    "Behavioral changes must occur when trigger_sensitivities are activated.",
+    "Victories must incur at least one cost from cost_mechanism."
+  ],
+  "fields": {
+    "tier": {
+      "type": "enum",
+      "allowed": ["S", "A", "B", "C"],
+      "meaning": "Narrative importance tier; S-tier changes system state."
+    },
+    "story_function": {
+      "type": "string",
+      "meaning": "Irreplaceable narrative role this character plays in the system."
+    },
+    "power_position": {
+      "type": "string",
+      "meaning": "Current position in the power structure; may shift across phases."
+    },
+    "desire_vector": {
+      "type": "string",
+      "meaning": "Long-term pursuit that drives decisions beyond short-term gain."
+    },
+    "fear_vector": {
+      "type": "string",
+      "meaning": "Primary loss the character seeks to avoid; alters risk behavior."
+    },
+    "risk_bias": {
+      "type": "enum",
+      "allowed": ["conservative", "balanced", "aggressive"],
+      "meaning": "Default risk tolerance before triggers are activated."
+    },
+    "trigger_sensitivities": {
+      "type": "array",
+      "items": "string",
+      "meaning": "Situations that shift behavior parameters when encountered."
+    },
+    "behavioral_tells": {
+      "type": "array",
+      "items": "string",
+      "meaning": "Observable behavior changes indicating internal state shifts."
+    },
+    "conflict_preferences": {
+      "type": "array",
+      "items": ["rules", "information", "negotiation", "procedures", "violence", "proxy enforcement"],
+      "meaning": "Preferred methods of resolving conflict, in descending priority."
+    },
+    "cost_mechanism": {
+      "type": "array",
+      "items": ["reputation", "law_attention", "relationship_damage", "evidence_risk", "moral_decay"],
+      "meaning": "Costs that must be paid when the character advances goals."
+    },
+    "relationship_forces": {
+      "type": "array",
+      "items": "string",
+      "meaning": "Persistent relationship tensions influencing decision outcomes."
+    },
+    "exit_constraints": {
+      "type": "array",
+      "items": "string",
+      "meaning": "Narrative restrictions on how this character may exit the story."
+    },
+    "notes": {
+      "type": "string",
+      "optional": true,
+      "meaning": "Human-facing guidance; not required for generation."
+    }
+  },
+  "validation_checks": [
+    "Every major action should align with risk_bias or a triggered deviation.",
+    "Trigger activation must produce observable behavioral_tells.",
+    "No character may advance without incurring a defined cost.",
+    "Exit must respect exit_constraints and alter narrative structure."
+  ]
+}
