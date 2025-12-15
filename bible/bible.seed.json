@@ -1,0 +1,341 @@
+{
+  "meta": {
+    "version": "2.0-final",
+    "genre": "东北都市黑道（群像多线 + 城市棋局 + 暗线贯穿）",
+    "positioning": "网文定位：节奏快、钩子强、爽点递进；反派聪明狠；群像各有算盘。",
+    "tone": ["硬", "狠", "快", "讲义气", "黑色幽默（少量）"],
+    "target_audience": {
+      "age": "18-35",
+      "lean": "偏男性向，但保留女性读者可追的人物弧光与情感线（不狗血、不降智）。",
+      "reading_habits": [
+        "开篇三章必须立冲突与名号/规则",
+        "每章必须推进与钩子",
+        "爽点递进而非重复",
+        "反派要狠且聪明，不能降智",
+        "群像要有各自利益与底线，不当工具人"
+      ]
+    },
+    "content_safety": {
+      "violence_policy": "可写冲突，但避免猎奇与过度血腥细节；重点写动作、节奏与后果。",
+      "adult_policy": "不写露骨情色。",
+      "minors_policy": "避免涉及未成年人违法或性内容。"
+    },
+    "canon_note": "本文件为源设定种子（seed）。任何大改先改 seed，再扩写。"
+  },
+  "scope": {
+    "target_total_words": 1000000,
+    "recommended_time_span_years": 10,
+    "space_expansion_plan": [
+      "东北根基（城市/县城/矿区）",
+      "跨省扩张（华北/沿海/口岸）",
+      "全国棋局（多城联动，黑白资本三角）",
+      "跨国博弈（日本为主，可扩展俄/韩/东南亚灰网）"
+    ],
+    "phase_word_budget": [
+      { "phase": "P1_根基立名", "words": 150000, "years": "1-2" },
+      { "phase": "P2_跨省扩张", "words": 200000, "years": "2-3" },
+      { "phase": "P3_全国棋局", "words": 250000, "years": "3-4" },
+      { "phase": "P4_跨国清盘", "words": 400000, "years": "2-3" }
+    ]
+  },
+  "world": {
+    "era": "现代",
+    "region_root": "中国东北",
+    "rules": {
+      "money_is_blood": "现金流、场子、工程、物流、壳公司与走账通道是真命脉；钱能解释大多数冲突。",
+      "black_white_gray": "黑白灰共存；角色可切换立场但必须付出代价与留下把柄。",
+      "violence_is_tool": "暴力是工具不是目的；真正胜负在规则、组织、信息与资金链。"
+    },
+    "climate_and_texture_by_phase": {
+      "P1_根基立名": [
+        "零下三十度的寒冬",
+        "棚户区、老厂区、锅炉房、站前街",
+        "夜市、澡堂、台球厅、烧烤摊",
+        "雪地老国道、县城旅馆",
+        "年关、人情债、婚丧事、红包与面子"
+      ],
+      "P2_跨省扩张": [
+        "华北平原的干冷与风沙",
+        "沿海城市的潮湿夜雨与霓虹",
+        "高速服务区、物流园、批发市场",
+        "港口、仓储、海关口岸的灰规则",
+        "跨省工程、矿产、运输线争夺"
+      ],
+      "P3_全国棋局": [
+        "一线城市的高密度与匿名感",
+        "南方闷热雨季与夜经济",
+        "会议室与地下场子的反差",
+        "高铁、机场、异地办事链路",
+        "白手套、壳公司、金融通道、舆论与监管"
+      ],
+      "P4_跨国清盘": [
+        "日本都市秩序感（关东/关西对比）",
+        "码头、地下金融、灰色中介网络",
+        "中日黑道规则冲突（纪律/契约 vs 灵活/人情）",
+        "海外华人灰网与“看不见的保人”",
+        "国际资本与地下势力勾连，清盘式收束"
+      ]
+    }
+  },
+  "cities": [
+    {
+      "alias": "冰城",
+      "prototype_hint": "哈尔滨",
+      "tags": ["省会", "权力中枢", "旧工业与新资本并存"],
+      "notes": "全书棋局中枢，黑白灰交错最深"
+    },
+    {
+      "alias": "钢城",
+      "prototype_hint": "鞍山/本溪",
+      "tags": ["重工业", "堂口规矩", "老派势力"],
+      "notes": "传统势力盘踞之地，规矩比拳头更硬"
+    },
+    {
+      "alias": "煤城",
+      "prototype_hint": "鹤岗/双鸭山",
+      "tags": ["资源枯竭", "底层", "出狠人"],
+      "notes": "主角根基与底层兄弟来源"
+    },
+    {
+      "alias": "港城",
+      "prototype_hint": "大连",
+      "tags": ["港口", "资本", "外来势力"],
+      "notes": "跨省与跨国线路的跳板"
+    },
+    {
+      "alias": "关城",
+      "prototype_hint": "口岸城市（泛指）",
+      "tags": ["口岸", "灰规则", "跨境"],
+      "notes": "暗线与跨境链路关键节点"
+    }
+  ],
+  "power_system": {
+    "philosophy": "强于常人，但必须可解释且有代价（伤病/债/名声/监管）。",
+    "dimensions": [
+      "体能与抗击打（训练/苦活/实战）",
+      "胆魄与狠劲（心理阈值与底层生存）",
+      "临场判断（观察、反应、布局）",
+      "组织调度能力（人、钱、线、规矩）"
+    ],
+    "constraints": [
+      "伤病会累积、旧伤影响发挥",
+      "情绪失控造成不可逆后果",
+      "义气绑定长期责任（背叛会反噬）",
+      "越往上越受规则与监管束缚（不能只靠拳头）"
+    ],
+    "combat_style_guidelines": [
+      "少血腥，多动作与节奏",
+      "胜负靠位置、道具、环境与心理",
+      "每次大冲突必须留下后果（伤/债/仇/名号/警方压力）"
+    ]
+  },
+  "protagonist": {
+    "name": "默认占位（init时可改）",
+    "origin": "煤城底层（矿区/老厂/棚户区）",
+    "core_traits": ["抗压强", "对承诺执着", "不主动惹事但绝不退让", "能把狠收进规矩里"],
+    "growth_arc": ["被动卷入", "被迫出头", "立名立规矩", "成为棋盘上一子", "开始反制棋局", "清盘旧账与新局"],
+    "signature": {
+      "public_image": "不爱废话，办事干净",
+      "private_wound": "对某类背叛零容忍",
+      "line_in_sand": "不碰某条底线（暗线解释其原因）"
+    }
+  },
+  "character_archetypes": {
+    "brother_core": {
+      "role": "死跟主角的兄弟",
+      "functions": ["情义线", "牺牲线", "把主角的人性拽住"],
+      "notes": "别写成傻子：要有贪念、梦想与恐惧。"
+    },
+    "strategist": {
+      "role": "智囊/操盘手",
+      "functions": ["推动智斗", "补足主角资本/规则短板"],
+      "notes": "不能全知：必须有误判与代价。"
+    },
+    "law_gray": {
+      "role": "警线/灰白角色",
+      "functions": ["规则压力", "信息战", "逼出选择"],
+      "notes": "避免脸谱化：给真实动机、底线与交易空间。"
+    },
+    "boss_old_school": {
+      "role": "老派堂口头目",
+      "functions": ["规矩体系", "传承冲突"],
+      "notes": "狠但讲规矩，让读者敬畏。"
+    },
+    "capital_proxy": {
+      "role": "资本代理人/白手套",
+      "functions": ["终局对手", "暗线B载体"],
+      "notes": "不靠拳头，靠规则、信息与资金；可替换他人做脏活。"
+    }
+  },
+  "organizations": {
+    "templates": [
+      {
+        "type": "街头势力",
+        "traits": ["义气", "野路子", "短兵相接"],
+        "lifespan": "短",
+        "function": "初期爽点与名号建立"
+      },
+      {
+        "type": "传统帮派（堂口制）",
+        "traits": ["规矩", "层级", "地盘与场子"],
+        "lifespan": "中",
+        "function": "中期博弈与组织扩张"
+      },
+      {
+        "type": "工程/物流灰网",
+        "traits": ["线", "车队", "仓储", "口岸规则"],
+        "lifespan": "长",
+        "function": "跨省扩张与现金流主线"
+      },
+      {
+        "type": "资本代理体系",
+        "traits": ["隐蔽", "冷血", "可替换的人"],
+        "lifespan": "长",
+        "function": "暗线与终局清盘"
+      },
+      {
+        "type": "跨国灰色网络（日本为主）",
+        "traits": ["纪律", "契约", "仪式化秩序", "冷处理"],
+        "lifespan": "长",
+        "function": "跨国冲突与规则碰撞"
+      }
+    ],
+    "org_naming_rules": [
+      "组织名尽量短、硬、带地域或物件意象",
+      "堂口/分支用“街/路/厂/码头/门”等词承载地域感"
+    ]
+  },
+  "plot": {
+    "main_line": "主角从底层崛起，夺到现金流与规则话语权，最终清盘旧案与幕后棋手。",
+    "threads_default": [
+      { "id": "T1_main", "name": "主线：崛起与清盘", "purpose": "名号、地位、现金流、规矩建立与升级" },
+      { "id": "T2_brotherhood", "name": "兄弟/情义线", "purpose": "情绪锚点与牺牲回收" },
+      { "id": "T3_law_capital", "name": "警线/资本线", "purpose": "规则压力、信息战、终局对手铺垫" }
+    ],
+    "dark_lines": [
+      {
+        "id": "DL1_old_case",
+        "name": "旧案与身世（暗线A）",
+        "core_question": "主角为何在极端情况下仍能冷静判断？旧案掩盖了什么？",
+        "early_hints": ["老物件/老照片/旧伤来源", "老人提到的旧地名或旧代号", "对背叛的极端反应"],
+        "mid_reveal": "旧案牵出地方权力与资本的共同利益",
+        "late_payoff": "旧案与跨境链路/幕后棋手勾连，成为终局钥匙"
+      },
+      {
+        "id": "DL2_hidden_player",
+        "name": "幕后棋手（暗线B）",
+        "core_question": "为何冲突总在关键节点被推动？谁在清盘城市？",
+        "early_hints": ["有人总提前得消息", "关键人物被保或被按下去", "项目/地块/物流线异常同向"],
+        "mid_reveal": "棋手通过白手套与壳公司操盘，黑道只是工具",
+        "late_payoff": "棋手暴露，主角用规则+狠完成清盘"
+      }
+    ],
+    "international_arc": {
+      "focus_country": "日本",
+      "conflict_design": ["纪律/契约 vs 灵活/人情", "表面秩序 vs 暗处冷血", "信息闭环 vs 关系网渗透"],
+      "avoid_low_level": ["避免简单民族对立", "避免把对手写蠢", "避免无脑碾压"]
+    }
+  },
+  "reader_hooks_and_payoffs": {
+    "hook_types": ["当场翻盘", "名号建立", "组织升级", "旧案一角被掀开", "幕后棋手手影出现", "兄弟线情绪爆点"],
+    "payoff_rules": [
+      "每 3-5 章回收一个小钩子（情报/人情/仇/债）",
+      "每 20-30 章回收一个中钩子并制造更大钩子",
+      "每一阶段末必须完成一次阶段清盘（钱、人、线、规矩至少清一次）"
+    ]
+  },
+  "coolness_rotation": {
+    "categories": ["硬冲突胜利", "规则内翻盘", "智斗反杀", "组织扩张", "情义兑现", "身份反转"],
+    "rotation_strategy": "避免连续三章同类爽点；大高潮前两章提高密度与强度，但仍保持差异化。"
+  },
+  "avoid_ai_tells": {
+    "banned_patterns": [
+      "总结式段落与说教口吻",
+      "空泛形容词堆砌（宏大/神秘/不可思议等）",
+      "旁白直接解释设定",
+      "无代价开挂",
+      "固定转折词模板化高频（总之/显然/不禁/仿佛等）"
+    ],
+    "writing_preferences": ["用动作与对话推进", "用可用的具体物件/气味/声音落地", "长短句交替", "信息通过事件展示而非旁白讲解"]
+  },
+  "chapter_engine": {
+    "chapter_word_target_default": 2500,
+    "max_threads_per_chapter": 2,
+    "chapter_types": ["ACTION", "DIALOGUE", "STRATEGY", "EMOTION", "TRANSITION"],
+    "chapter_contract": {
+      "must_have": [
+        "当章目标（谁想要什么）",
+        "当章阻碍（规则/成本/人性/信息差至少一项）",
+        "当章变化（信息/关系/风险/资源至少变一项）",
+        "结尾钩子（下一章必须回应的问题）"
+      ],
+      "optional_spice": ["地域风物一处", "行业动作一处", "带刺幽默一句（少量）"]
+    },
+    "detail_system": {
+      "upgrade_summary": "从硬数量改为软算法：密度区间 + 章节类型自适应 + 自检报告。",
+      "detail_categories": ["物件", "场景", "感官", "行业动作"],
+      "density_targets_by_type": {
+        "ACTION": { "density": "low-to-medium", "note": "优先节奏与位置关系；细节为动作服务，不拖慢高潮。" },
+        "DIALOGUE": { "density": "medium", "note": "细节用来压迫气氛与暴露权力关系，避免堆砌。" },
+        "STRATEGY": { "density": "low", "note": "信息密度更重要；细节只放关键一两处，保证可信落地。" },
+        "EMOTION": { "density": "medium-high", "note": "允许一个细节打穿整章（物件/气味/温度成为情绪锚）。" },
+        "TRANSITION": { "density": "medium", "note": "用细节快速换场与交代现实成本（路/钱/人/手续）。" }
+      },
+      "hard_bans": [
+        "用“氛围拉满/眼神复杂/命运齿轮”等空话替代具体描写",
+        "同一类细节连续打卡式重复（每章烟/灯/霓虹）"
+      ],
+      "detail_selection_rules": [
+        "细节必须能完成至少一项任务：推动剧情/塑造人物/暴露规则/加压风险/回收暗线。",
+        "宁可少，但要准；一写就要可用、可验证、可被角色触碰或利用。"
+      ]
+    }
+  },
+  "generation_protocol": {
+    "model_instruction": "写作时严格遵守 bible 与 continuity；不要提“我是AI”；不要输出写作建议；按输出协议给正文与自检包。",
+    "workflow": [
+      "先定 phase/arc 的章节列表与每章类型（outline）",
+      "每章先出 200-400 字场景草图（draft）",
+      "通过后扩写成正式章节（chapter）",
+      "每章产出自检 JSON（production_pack）"
+    ],
+    "output_protocol": {
+      "chapter_filename": "V{vol:02d}_C{ch:03d}_{slug}.md",
+      "chapter_header_template": ["标题：", "时间：", "地点：", "POV：", "章节类型：", "本章目标：", "本章变化：", "结尾钩子："],
+      "production_pack_required": true,
+      "production_pack_schema": {
+        "chapter_id": "string",
+        "chapter_type": "ACTION|DIALOGUE|STRATEGY|EMOTION|TRANSITION",
+        "threads_used": ["T1_main|T2_brotherhood|T3_law_capital|DL1_old_case|DL2_hidden_player"],
+        "hook": { "type": "string", "question": "string" },
+        "payoff": { "recovered_hooks": ["string"], "new_hooks": ["string"] },
+        "detail_audit": {
+          "density_judgement": "low|medium|high",
+          "details_used": [
+            { "category": "物件|场景|感官|行业动作", "text": "string", "purpose": "剧情|人物|规则|风险|暗线" }
+          ],
+          "repetition_risk": { "flag": true, "note": "string" }
+        },
+        "continuity_check": { "flags": ["string"], "fix_notes": ["string"] }
+      },
+      "forbidden": [
+        "正文出现“作为AI/模型/我将”等自述",
+        "用小标题堆砌总结冒充叙事",
+        "输出与故事无关的建议/讲解"
+      ]
+    }
+  },
+  "continuity": {
+    "canon_levels": {
+      "L0_seed": "bible.seed.json",
+      "L1_bible": "bible/*.md and bible/*.json",
+      "L2_outline": "outline/*.md",
+      "L3_chapters": "chapters/**/*.md",
+      "L4_drafts": "drafts/**/*.md"
+    },
+    "rules": [
+      "设定变更先改 L0/L1，再写入章节；避免章节反向污染设定。",
+      "跨境流程/规则不确定时：写“可信的模糊”，并埋可修订钩子，避免硬编具体数据。"
+    ]
+  }
+}

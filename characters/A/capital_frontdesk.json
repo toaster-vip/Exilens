@@ -1,0 +1,30 @@
+﻿{
+  "tier": "A",
+  "story_function": "corporate evidence node and paperwork trail generator",
+  "power_position": "low",
+  "desire_vector": "promotion through appearing competent and loyal",
+  "fear_vector": "getting a permanent black mark",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "investigation rumors inside the company"
+  ],
+  "behavioral_tells": [
+    "over-recording interactions",
+    "sudden policy reminders"
+  ],
+  "conflict_preferences": [
+    "procedures",
+    "information"
+  ],
+  "cost_mechanism": [
+    "evidence_risk",
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "paper trails can become weapons unintentionally"
+  ],
+  "exit_constraints": [
+    "exit via scapegoating or forced cooperation"
+  ],
+  "notes": "use to make 'white world' dangerous without gunfights"
+}

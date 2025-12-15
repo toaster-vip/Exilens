@@ -1,0 +1,30 @@
+﻿{
+  "tier": "A",
+  "story_function": "cross-border counterpart enforcing contract-discipline norms",
+  "power_position": "high_proxy",
+  "desire_vector": "stable operations within clear boundaries",
+  "fear_vector": "loss of control and reputational stain",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "unpredictable violence",
+    "informal promises without enforceable backing"
+  ],
+  "behavioral_tells": [
+    "cooldown and silence instead of confrontation",
+    "formalizing terms suddenly"
+  ],
+  "conflict_preferences": [
+    "procedures",
+    "contracts"
+  ],
+  "cost_mechanism": [
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "tension between discipline and local flexibility"
+  ],
+  "exit_constraints": [
+    "exit via cutting ties, not emotional scenes"
+  ],
+  "notes": "use to sharpen P4 clash: order vs improvisation"
+}

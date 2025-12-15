@@ -1,0 +1,29 @@
+﻿{
+  "tier": "A",
+  "story_function": "legal packaging and boundary-setting for gray operations",
+  "power_position": "proxy",
+  "desire_vector": "fees and professional insulation",
+  "fear_vector": "crossing a line that ruins career",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "requests to sign or file something falsifiable"
+  ],
+  "behavioral_tells": [
+    "adds clauses and delays execution",
+    "pushes responsibility back to clients"
+  ],
+  "conflict_preferences": [
+    "contracts",
+    "procedures"
+  ],
+  "cost_mechanism": [
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "helps only while deniability holds"
+  ],
+  "exit_constraints": [
+    "exit via withdrawal, not violence"
+  ],
+  "notes": "use to show 'legal vs illegal' boundary as movable but costly"
+}

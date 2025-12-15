@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "procedural pressure and investigation momentum",
+  "power_position": "mid",
+  "desire_vector": "career advancement through case resolution",
+  "fear_vector": "being politically suppressed",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "upper-level pressure spikes",
+    "public attention forcing rapid action"
+  ],
+  "behavioral_tells": [
+    "tightened timelines",
+    "increased documentation and checklists"
+  ],
+  "conflict_preferences": [
+    "procedures",
+    "information"
+  ],
+  "cost_mechanism": [
+    "relationship_damage",
+    "law_attention"
+  ],
+  "relationship_forces": [
+    "needs results but fears stepping on protected interests"
+  ],
+  "exit_constraints": [
+    "promotion or scapegoating outcome"
+  ],
+  "notes": "acts as the season-long pressure gauge; speed rises when he feels watched"
+}

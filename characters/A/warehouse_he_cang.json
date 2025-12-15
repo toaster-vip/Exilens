@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "warehouse node and physical evidence risk keeper",
+  "power_position": "low_to_mid",
+  "desire_vector": "steady skim without attention",
+  "fear_vector": "inspection exposing discrepancies",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "surprise checks",
+    "missing inventory questions"
+  ],
+  "behavioral_tells": [
+    "over-locking and repeated verification behaviors",
+    "tries to move responsibility to paperwork"
+  ],
+  "conflict_preferences": [
+    "procedures",
+    "information"
+  ],
+  "cost_mechanism": [
+    "evidence_risk",
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "knows physical truth; everyone wants his silence"
+  ],
+  "exit_constraints": [
+    "exit via arrest, blackmail, or forced cooperation"
+  ],
+  "notes": "use for 'where is it stored' tension and chain-of-custody games"
+}

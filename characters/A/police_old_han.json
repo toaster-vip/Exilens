@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "historical memory and old-case bridge for long arcs",
+  "power_position": "fringe",
+  "desire_vector": "quiet retirement with minimal backlash",
+  "fear_vector": "old case reopening and pulling him back in",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "old names resurfacing",
+    "unexplained protection patterns"
+  ],
+  "behavioral_tells": [
+    "avoids direct statements",
+    "pushes meetings into neutral, public places"
+  ],
+  "conflict_preferences": [
+    "information",
+    "procedures"
+  ],
+  "cost_mechanism": [
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "knows too much but cannot say it cleanly"
+  ],
+  "exit_constraints": [
+    "cannot be a pure exposition dump",
+    "must trade info for a price"
+  ],
+  "notes": "use as controlled drip of DL1/DL2 connective tissue"
+}

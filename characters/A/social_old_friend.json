@@ -1,0 +1,30 @@
+﻿{
+  "tier": "A",
+  "story_function": "betrayal entry point and social camouflage interface",
+  "power_position": "low_to_mid",
+  "desire_vector": "borrow power and climb quickly",
+  "fear_vector": "being seen as insignificant",
+  "risk_bias": "aggressive",
+  "trigger_sensitivities": [
+    "sudden opportunity offered by higher-status actors"
+  ],
+  "behavioral_tells": [
+    "over-familiarity",
+    "selective honesty"
+  ],
+  "conflict_preferences": [
+    "information",
+    "negotiation"
+  ],
+  "cost_mechanism": [
+    "relationship_damage",
+    "reputation"
+  ],
+  "relationship_forces": [
+    "will trade loyalty for a seat at the table"
+  ],
+  "exit_constraints": [
+    "exit via betrayal exposure and consequence"
+  ],
+  "notes": "use to seed early micro-betrayals that scale into DL2 patterns"
+}

@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "execution arm under the capital proxy; replaceable but dangerous",
+  "power_position": "mid",
+  "desire_vector": "recognition and upward mobility through performance",
+  "fear_vector": "being discarded after failure",
+  "risk_bias": "aggressive",
+  "trigger_sensitivities": [
+    "signals of internal distrust",
+    "missed targets"
+  ],
+  "behavioral_tells": [
+    "imitates proxy behavior patterns",
+    "overcorrects with harsh enforcement"
+  ],
+  "conflict_preferences": [
+    "proxy enforcement",
+    "information"
+  ],
+  "cost_mechanism": [
+    "reputation",
+    "evidence_risk"
+  ],
+  "relationship_forces": [
+    "loyalty is transactional and fear-driven"
+  ],
+  "exit_constraints": [
+    "exit via being cut loose or sacrificed"
+  ],
+  "notes": "use to show how systems manufacture cruelty without personal hatred"
+}

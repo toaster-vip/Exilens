@@ -1,0 +1,164 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/novel_factory/pack.schema.json",
+  "title": "NEXT_CHAPTER_PACK Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "chapter_no",
+    "chapter_title",
+    "chapter_word_target",
+    "chapter_summary",
+    "timeline_updates",
+    "character_updates",
+    "org_updates",
+    "new_facts",
+    "open_loops",
+    "resolved_loops",
+    "next_chapter_plan",
+    "foreshadowing_tasks",
+    "risk_flags",
+    "style_selfcheck"
+  ],
+  "properties": {
+    "chapter_no": { "type": "integer", "minimum": 1 },
+    "chapter_title": { "type": "string" },
+    "chapter_word_target": { "type": "integer", "minimum": 500 },
+
+    "chapter_summary": {
+      "type": "string",
+      "minLength": 120,
+      "maxLength": 1600,
+      "description": "Target 300-800 Chinese chars (approx). Keep concise, plot-relevant."
+    },
+
+    "timeline_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["time_hint", "event"],
+        "properties": {
+          "time_hint": { "type": "string", "minLength": 1 },
+          "event": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
+    "character_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "status_delta", "secrets_gained", "relationships_delta"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "status_delta": { "type": "string", "minLength": 1 },
+          "secrets_gained": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "relationships_delta": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Free-form deltas like '陈砚->一夫: trust -1 (bypass praise triggered)'"
+          }
+        }
+      }
+    },
+
+    "org_updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["org", "change"],
+        "properties": {
+          "org": { "type": "string", "minLength": 1 },
+          "change": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
+    "new_facts": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "New canon facts introduced in this chapter. Must be usable later."
+    },
+
+    "open_loops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "description", "priority", "due_hint"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Z]{2,5}-\\d{3,6}$" },
+          "description": { "type": "string", "minLength": 1 },
+          "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "due_hint": { "type": "string" }
+        }
+      }
+    },
+
+    "resolved_loops": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[A-Z]{2,5}-\\d{3,6}$" }
+    },
+
+    "next_chapter_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["goal", "conflict", "beats", "pov_suggestions", "hook"],
+      "properties": {
+        "goal": { "type": "string", "minLength": 1 },
+        "conflict": { "type": "string", "minLength": 1 },
+        "beats": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 8,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "pov_suggestions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "hook": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "foreshadowing_tasks": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+
+    "risk_flags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Potential continuity/style/bible conflicts detected by the writer."
+    },
+
+    "style_selfcheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ai_tells", "concrete_details_used", "dialogue_ratio_hint"],
+      "properties": {
+        "ai_tells": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "concrete_details_used": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of concrete details used (objects/sounds/smells/weather/logistics)."
+        },
+        "dialogue_ratio_hint": {
+          "type": "string",
+          "description": "Free-form hint, e.g. 'medium', 'high', 'low' or percent estimate."
+        }
+      }
+    }
+  }
+}

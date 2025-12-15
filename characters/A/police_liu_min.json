@@ -1,0 +1,32 @@
+﻿{
+  "tier": "A",
+  "story_function": "gray-white buffer and negotiation channel between rules and street reality",
+  "power_position": "mid",
+  "desire_vector": "stability and controlled outcomes",
+  "fear_vector": "loss of control leading to public failure",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "unexpected violence",
+    "media exposure"
+  ],
+  "behavioral_tells": [
+    "quietly reduces contact frequency",
+    "pushes for informal containment over formal escalation"
+  ],
+  "conflict_preferences": [
+    "information",
+    "procedures"
+  ],
+  "cost_mechanism": [
+    "moral_decay",
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "must balance career safety with personal lines"
+  ],
+  "exit_constraints": [
+    "cannot be openly corrupted on-page",
+    "must remain plausibly gray"
+  ],
+  "notes": "use to prevent police line from becoming cartoonish; she manages the heat"
+}

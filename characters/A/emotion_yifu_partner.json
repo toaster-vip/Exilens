@@ -1,0 +1,32 @@
+﻿{
+  "tier": "A",
+  "story_function": "status desire amplifier for yifu and a soft leverage point",
+  "power_position": "fringe",
+  "desire_vector": "visible security and social legitimacy",
+  "fear_vector": "falling back into poverty and embarrassment",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "comparison to higher-status peers",
+    "financial instability"
+  ],
+  "behavioral_tells": [
+    "spending increases",
+    "emotional pressure escalates privately"
+  ],
+  "conflict_preferences": [
+    "negotiation",
+    "relationship leverage"
+  ],
+  "cost_mechanism": [
+    "relationship_damage",
+    "reputation"
+  ],
+  "relationship_forces": [
+    "drives yifu risk_bias upward under validation stress"
+  ],
+  "exit_constraints": [
+    "cannot be purely villainized",
+    "exit via breakup, distance, or forced compromise"
+  ],
+  "notes": "use to turn identity-jokes into real social pressure without soap-opera tone"
+}

@@ -1,0 +1,35 @@
+﻿{
+  "tier": "A",
+  "story_function": "engineering execution layer and human cashflow pressure point",
+  "power_position": "mid",
+  "desire_vector": "timely payment and crew stability",
+  "fear_vector": "being left holding losses after commitment",
+  "risk_bias": "aggressive",
+  "trigger_sensitivities": [
+    "payment delays beyond agreed windows",
+    "crew unrest or work stoppage threats",
+    "signals that funds are being rerouted elsewhere"
+  ],
+  "behavioral_tells": [
+    "publicly escalating complaints to force response",
+    "seeking side arrangements when ignored",
+    "compressing timelines to create urgency"
+  ],
+  "conflict_preferences": [
+    "negotiation",
+    "direct action"
+  ],
+  "cost_mechanism": [
+    "reputation",
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "loyalty follows whoever clears accounts",
+    "pressure from workers he cannot easily replace"
+  ],
+  "exit_constraints": [
+    "cannot remain neutral indefinitely",
+    "must eventually switch sides or be removed from the project"
+  ],
+  "notes": "turns abstract funding issues into visible human conflict; payment problems immediately surface as action"
+}

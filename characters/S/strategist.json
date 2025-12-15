@@ -1,0 +1,35 @@
+﻿{
+  "tier": "S",
+  "story_function": "system builder converting chaos into repeatable process",
+  "power_position": "high_shadow",
+  "desire_vector": "a predictable and controllable operational order",
+  "fear_vector": "proof that human emotion invalidates system design",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "emotional variables overriding planned flow",
+    "old-school authority rejecting procedural legitimacy"
+  ],
+  "behavioral_tells": [
+    "excessive scenario splitting",
+    "delayed approvals and staged rollouts"
+  ],
+  "conflict_preferences": [
+    "contracts",
+    "procedures",
+    "replacement logic"
+  ],
+  "cost_mechanism": [
+    "moral_decay",
+    "legacy_hostility",
+    "loss_of_trust"
+  ],
+  "relationship_forces": [
+    "protagonist mutual dependency",
+    "capital proxy mirror rivalry"
+  ],
+  "exit_constraints": [
+    "cannot exit via impulsive death",
+    "must be forced into a final alignment choice"
+  ],
+  "notes": "appears calm; instability emerges when system proves insufficient"
+}

@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "border-interface and cross-jurisdiction friction point",
+  "power_position": "proxy",
+  "desire_vector": "stable gray profit with low visibility",
+  "fear_vector": "being pulled into a formal case",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "new enforcement directives",
+    "named attention from investigators"
+  ],
+  "behavioral_tells": [
+    "goes silent and delays responses",
+    "suggests route changes that increase cost"
+  ],
+  "conflict_preferences": [
+    "information",
+    "procedures"
+  ],
+  "cost_mechanism": [
+    "relationship_damage",
+    "evidence_risk"
+  ],
+  "relationship_forces": [
+    "must serve both sides without belonging to either"
+  ],
+  "exit_constraints": [
+    "exit via leaving the country or severing contact"
+  ],
+  "notes": "use to start P2/P4 bridges: costs, delays, and rule clashes"
+}

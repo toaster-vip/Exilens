@@ -1,0 +1,30 @@
+﻿{
+  "tier": "A",
+  "story_function": "normal-life contrast and 'escape velocity' storyline",
+  "power_position": "fringe",
+  "desire_vector": "upward mobility and clean future",
+  "fear_vector": "being pulled into the underground world",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "public rumors",
+    "suspicious financial help"
+  ],
+  "behavioral_tells": [
+    "creates distance",
+    "questions money origins indirectly"
+  ],
+  "conflict_preferences": [
+    "information",
+    "avoidance"
+  ],
+  "cost_mechanism": [
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "protagonist's protection impulse vs her autonomy"
+  ],
+  "exit_constraints": [
+    "exit via leaving town or breaking contact, not melodrama"
+  ],
+  "notes": "use to measure protagonist's moral drift and cost of power"
+}

@@ -1,0 +1,32 @@
+﻿{
+  "tier": "A",
+  "story_function": "money-laundering and ledger integrity bottleneck",
+  "power_position": "proxy",
+  "desire_vector": "personal safety through clean separation and plausible deniability",
+  "fear_vector": "traceable records linking to him",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "audit-like questioning",
+    "pressure to move money faster than safe"
+  ],
+  "behavioral_tells": [
+    "adds extra steps and delays",
+    "changes channels and tools frequently"
+  ],
+  "conflict_preferences": [
+    "procedures",
+    "information"
+  ],
+  "cost_mechanism": [
+    "relationship_damage",
+    "evidence_risk"
+  ],
+  "relationship_forces": [
+    "everyone needs him, which makes him paranoid"
+  ],
+  "exit_constraints": [
+    "cannot be forced into loud action scenes",
+    "exit via disappearance, capture, or betrayal of data"
+  ],
+  "notes": "use as choke point: slow money = conflict; fast money = risk"
+}

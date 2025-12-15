@@ -1,0 +1,36 @@
+﻿{
+  "tier": "S",
+  "story_function": "system stabilizer and loss-control decision maker",
+  "power_position": "mid_to_high",
+  "desire_vector": "to gain durable rule-setting authority rather than short-term wins",
+  "fear_vector": "being treated as a disposable chess piece",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "family being indirectly exposed or referenced",
+    "key actions bypassing him and negotiated directly with subordinates"
+  ],
+  "behavioral_tells": [
+    "shortened decision cycles",
+    "fewer verification steps before action"
+  ],
+  "conflict_preferences": [
+    "rules",
+    "information",
+    "controlled violence"
+  ],
+  "cost_mechanism": [
+    "reputation",
+    "law_attention",
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "brotherhood obligation tension",
+    "strategist rule-alignment pressure",
+    "old-school legitimacy gatekeeping"
+  ],
+  "exit_constraints": [
+    "no clean victory without loss",
+    "final position must retain a visible structural flaw"
+  ],
+  "notes": "primary axis of cost vs control; growth expressed through narrowing acceptable losses"
+}

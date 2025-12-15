@@ -1,0 +1,29 @@
+﻿{
+  "tier": "A",
+  "story_function": "home-front pressure and moral weight anchor",
+  "power_position": "fringe",
+  "desire_vector": "family safety and quiet normalcy",
+  "fear_vector": "being publicly dragged into the conflict",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "outsiders referencing the family indirectly"
+  ],
+  "behavioral_tells": [
+    "silence increases",
+    "routine becomes rigid"
+  ],
+  "conflict_preferences": [
+    "avoidance",
+    "information"
+  ],
+  "cost_mechanism": [
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "protagonist must choose between speed and protection"
+  ],
+  "exit_constraints": [
+    "cannot be used as a cheap hostage device repeatedly"
+  ],
+  "notes": "family is 'seen' = protagonist trigger; use sparingly for maximum heat"
+}

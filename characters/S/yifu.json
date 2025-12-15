@@ -1,0 +1,36 @@
+﻿{
+  "tier": "S",
+  "story_function": "emotional amplifier and instability variable",
+  "power_position": "fringe",
+  "desire_vector": "to be recognized as an independent decision maker",
+  "fear_vector": "being treated as an accessory or joke",
+  "risk_bias": "aggressive",
+  "trigger_sensitivities": [
+    "being acknowledged directly while bypassing the protagonist",
+    "being compared favorably against the protagonist",
+    "identity being casually joked about in serious contexts"
+  ],
+  "behavioral_tells": [
+    "volunteers for tasks beyond assigned scope",
+    "reduces confirmation or reporting back",
+    "accelerates action timing"
+  ],
+  "conflict_preferences": [
+    "direct action",
+    "physical responsibility"
+  ],
+  "cost_mechanism": [
+    "evidence_risk",
+    "reputation",
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "protagonist dependency tension",
+    "strategist distrust"
+  ],
+  "exit_constraints": [
+    "cannot disappear silently",
+    "exit must trigger structural consequences"
+  ],
+  "notes": "humor fades over long arc; instability becomes tragedy signal"
+}

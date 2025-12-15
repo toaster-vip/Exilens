@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "vehicle-line stability and real-world logistics constraint provider",
+  "power_position": "mid",
+  "desire_vector": "keep routes running and margins predictable",
+  "fear_vector": "crackdowns that freeze movement",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "checkpoint tightening",
+    "unexpected cargo inspection"
+  ],
+  "behavioral_tells": [
+    "reroutes without explanation",
+    "reduces idle time and stops"
+  ],
+  "conflict_preferences": [
+    "procedures",
+    "information"
+  ],
+  "cost_mechanism": [
+    "evidence_risk",
+    "reputation"
+  ],
+  "relationship_forces": [
+    "loyal to cashflow, not to people"
+  ],
+  "exit_constraints": [
+    "can be replaced, but replacement must cause ripple effects"
+  ],
+  "notes": "use to make expansions feel real: time, roads, checkpoints, costs"
+}

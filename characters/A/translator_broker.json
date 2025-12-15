@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "information translator and double-sided risk funnel",
+  "power_position": "proxy",
+  "desire_vector": "commission without commitment",
+  "fear_vector": "being forced to choose a side",
+  "risk_bias": "balanced",
+  "trigger_sensitivities": [
+    "direct questioning from either side",
+    "requests for guarantees"
+  ],
+  "behavioral_tells": [
+    "strategic ambiguity",
+    "delayed responses"
+  ],
+  "conflict_preferences": [
+    "information",
+    "negotiation"
+  ],
+  "cost_mechanism": [
+    "relationship_damage",
+    "evidence_risk"
+  ],
+  "relationship_forces": [
+    "survives by staying useful and unprovable"
+  ],
+  "exit_constraints": [
+    "exit via disappearance or betrayal of information"
+  ],
+  "notes": "ideal for miscommunications that are not plot holes but incentives"
+}

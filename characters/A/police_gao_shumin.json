@@ -1,0 +1,31 @@
+﻿{
+  "tier": "A",
+  "story_function": "internal leak and betrayal vector inside procedural systems",
+  "power_position": "low_to_mid",
+  "desire_vector": "steady off-book income and protection",
+  "fear_vector": "exposure and abandonment",
+  "risk_bias": "aggressive",
+  "trigger_sensitivities": [
+    "cashflow disruption",
+    "signals that he is becoming disposable"
+  ],
+  "behavioral_tells": [
+    "over-communicates to confirm safety",
+    "makes erratic small mistakes under pressure"
+  ],
+  "conflict_preferences": [
+    "information",
+    "proxy enforcement"
+  ],
+  "cost_mechanism": [
+    "evidence_risk",
+    "relationship_damage"
+  ],
+  "relationship_forces": [
+    "depends on protectors he cannot control"
+  ],
+  "exit_constraints": [
+    "must end as exposure, prison, or silencing"
+  ],
+  "notes": "never heroic; fear-driven; useful for timed leaks and misdirection"
+}

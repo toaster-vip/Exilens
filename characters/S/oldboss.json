@@ -1,0 +1,34 @@
+﻿{
+  "tier": "S",
+  "story_function": "legacy legitimacy gate and old-order anchor",
+  "power_position": "declining_high",
+  "desire_vector": "continuity of rules beyond his tenure",
+  "fear_vector": "fragmentation of authority into sellable parts",
+  "risk_bias": "conservative",
+  "trigger_sensitivities": [
+    "capital bypassing traditional authority to set prices or rules"
+  ],
+  "behavioral_tells": [
+    "ritualized decision framing",
+    "slower but heavier commitments"
+  ],
+  "conflict_preferences": [
+    "adjudication",
+    "exclusion",
+    "symbolic punishment"
+  ],
+  "cost_mechanism": [
+    "missed_opportunity",
+    "internal_schism"
+  ],
+  "relationship_forces": [
+    "protagonist trial-by-recognition",
+    "strategist ideological conflict",
+    "capital proxy unresolved history"
+  ],
+  "exit_constraints": [
+    "cannot fade quietly",
+    "departure must signal era transition"
+  ],
+  "notes": "represents rule continuity; collapse or exit reshapes entire system"
+}
