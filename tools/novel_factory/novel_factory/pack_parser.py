@@ -6,14 +6,18 @@ from typing import Any, Dict
 
 from jsonschema import Draft7Validator
 
-from .config import PACK_SCHEMA_PATH
-
 
 class PackValidationError(ValueError):
     pass
 
 
-def load_schema(schema_path: Path = PACK_SCHEMA_PATH) -> Dict[str, Any]:
+def _default_schema_path() -> Path:
+    # pack.schema.json sits next to this file
+    return Path(__file__).with_name("pack.schema.json")
+
+
+def load_schema(schema_path: Path | None = None) -> Dict[str, Any]:
+    schema_path = schema_path or _default_schema_path()
     # allow BOM in repo-provided schema
     with schema_path.open("r", encoding="utf-8-sig") as f:
         return json.load(f)
@@ -24,20 +28,13 @@ VALIDATOR = Draft7Validator(SCHEMA)
 
 
 def validate_pack(data: Dict[str, Any]) -> None:
+    # Must match pack.schema.json
     required = [
-        "chapter_no",
-        "chapter_word_target",
         "chapter_summary",
-        "timeline_updates",
-        "character_updates",
-        "org_updates",
-        "new_facts",
+        "next_plan",
         "open_loops",
-        "resolved_loops",
-        "next_chapter_plan",
-        "foreshadowing_tasks",
-        "risk_flags",
-        "style_selfcheck",
+        "character_updates",
+        "continuity_updates",
     ]
     missing = [key for key in required if key not in data]
     if missing:
