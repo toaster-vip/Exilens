@@ -16,3 +16,12 @@ htmlcov/
 # ===== OS junk =====
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc
+.pytest_cache/
+tools/novel_factory/exports/
+tools/novel_factory/**/*.docx
+# novel_factory runtime outputs / state
+chapters/
+notes/
+timeline/continuity.json

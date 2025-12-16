@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Next Chapter Pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["chapter_summary", "next_plan", "open_loops", "character_updates", "continuity_updates"],
+  "properties": {
+    "chapter_summary": { "type": "string", "minLength": 20, "maxLength": 2000 },
+
+    "next_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["goal", "conflict", "beats", "pov_suggestions", "hook"],
+      "properties": {
+        "goal": { "type": "string", "minLength": 3, "maxLength": 200 },
+        "conflict": { "type": "string", "maxLength": 400 },
+        "beats": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 10,
+          "items": { "type": "string", "minLength": 3, "maxLength": 200 }
+        },
+        "pov_suggestions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 1, "maxLength": 60 }
+        },
+        "hook": { "type": "string", "minLength": 3, "maxLength": 200 }
+      }
+    },
+
+    "open_loops": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "description", "status"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^(DL|PL|RL)\\d+-\\d{4}$" },
+          "description": { "type": "string", "minLength": 5, "maxLength": 200 },
+          "status": { "type": "string", "enum": ["open", "progress", "closed"] }
+        }
+      }
+    },
+
+    "character_updates": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+          "status_delta": { "type": "string", "maxLength": 240 },
+          "secrets_gained": {
+            "type": "array",
+            "maxItems": 10,
+            "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+          },
+          "relationships_delta": {
+            "type": "array",
+            "maxItems": 10,
+            "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+          }
+        }
+      }
+    },
+
+    "continuity_updates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timeline_events", "evidence_risks", "law_attention", "reputation_changes"],
+      "properties": {
+        "timeline_events": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "type": "string", "minLength": 3, "maxLength": 200 }
+        },
+        "evidence_risks": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "type": "string", "minLength": 3, "maxLength": 200 }
+        },
+        "law_attention": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "reputation_changes": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "type": "string", "minLength": 3, "maxLength": 200 }
+        }
+      }
+    }
+  }
+}
