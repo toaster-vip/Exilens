@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -14,12 +14,12 @@ class Continuity:
 
     def _load(self) -> Dict[str, Any]:
         if self.path.exists():
-            with self.path.open("r", encoding="utf-8") as f:
+            with self.path.open("r", encoding="utf-8-sig") as f:
                 return json.load(f)
         return {
             "version": "0.1",
             "project": {},
-            "progress": {"current_chapter": 0, "completed_chapters": [], "estimated_total_words": 0, "phase": "P1_根基立名"},
+            "progress": {"current_chapter": 0, "completed_chapters": [], "estimated_total_words": 0, "phase": "P1_鏍瑰熀绔嬪悕"},
             "thread_index": [],
             "open_loops": [],
             "resolved_loops": [],
@@ -28,7 +28,7 @@ class Continuity:
 
     def save(self) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        with self.path.open("w", encoding="utf-8") as f:
+        with self.path.open("w", encoding="utf-8-sig") as f:
             json.dump(self.data, f, ensure_ascii=False, indent=2)
 
     # deterministic minify helpers

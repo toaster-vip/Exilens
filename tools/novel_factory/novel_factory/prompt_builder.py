@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 from typing import Any, Dict
 
@@ -15,6 +16,7 @@ from .config import (
 from .continuity import Continuity, minify_bible, minify_continuity
 from .rules_softener import soften_style_rules
 from .style_cards import BANNED_FILLERS, EDITOR_DONTS, choose_strategy, sample_materials
+from .prompt_snapshot import save_prompt_snapshot
 
 # If you ever hit Windows encoding issues again, set this to "en".
 BRIEF_LANG = "zh"  # "zh" | "en"
@@ -193,7 +195,7 @@ def build_prompt(
 
     # Softened rules to reduce "AI instruction" tone at runtime
     style_rules_raw = load_text(STYLE_RULES_PATH)
-    style_rules = soften_style_rules(style_rules_raw)
+    style_rules = soften_style_rules(style_rules_raw, add_preface=False)
 
     bible = load_json(BIBLE_PATH)
     bible_mini = minify_bible(bible)
@@ -239,10 +241,16 @@ def build_prompt(
         prompt = prompt.replace("{{EDITOR_BRIEF}}", editor_brief)
     else:
         prompt = prompt + "\n\n" + editor_brief
-
+    # Prompt snapshot (on by default; off by default under pytest)
+    default_enabled = "0" if "PYTEST_CURRENT_TEST" in os.environ else "1"
+    enabled = os.getenv("NOVEL_FACTORY_SNAPSHOT_PROMPT", default_enabled).strip() != "0"
+    if enabled:
+        try:
+            save_prompt_snapshot(prompt=prompt, chapter_no=chapter_no, seed=seed_i)
+        except Exception as e:
+            # Snapshot failure must never break prompt generation
+            print(f"[novel_factory] WARN: prompt snapshot failed: {e}")
     return prompt
-
-
 def plan_from_pack(pack: Dict[str, Any]) -> Dict[str, Any]:
     nxt = pack.get("next_chapter_plan", {})
     return {
@@ -252,3 +260,8 @@ def plan_from_pack(pack: Dict[str, Any]) -> Dict[str, Any]:
         "pov_suggestions": nxt.get("pov_suggestions", []),
         "hook": nxt.get("hook", ""),
     }
+
+
+
+
+

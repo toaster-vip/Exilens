@@ -25,3 +25,18 @@ tools/novel_factory/**/*.docx
 chapters/
 notes/
 timeline/continuity.json
+outputs/
+outputs/
+# novel_factory temp / previews
+bad_pack.json
+good_pack.json
+continuity.preview.json
+tools/novel_factory/prompt_preview.txt
+
+# backups
+prompts/*.bak*
+tools/novel_factory/novel_factory/*.bak*
+
+# outputs
+outputs/
+tools/novel_factory/outputs/

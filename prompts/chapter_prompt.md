@@ -2,11 +2,16 @@
 
 You are writing the next chapter of a long-form serialized novel.
 
-You MUST follow all hard constraints below. Do NOT explain. Do NOT output plans. Output only the required blocks at the end.
+Follow the guidelines below.  
+No explanations.  
+No planning text.  
+Output only the required blocks at the end.
 
 ---
 
-## HARD STYLE CONSTRAINTS
+## STYLE GUIDELINES
+【写作倾向提示】下面的规则用于帮助统一气质与避免跑偏，是编辑建议而不是硬性KPI。若与剧情/人物当下状态冲突，以剧情自然为先。
+
 {{STYLE_RULES}}
 
 ---
@@ -65,11 +70,15 @@ Hook question at end:
 
 ---
 
-## OUTPUT FORMAT (STRICT)
-You MUST output exactly two blocks in this order:
+## OUTPUT FORMAT (Required)
+Output exactly two blocks in this order:
 
 ===CHAPTER_TEXT===
 (Only the chapter prose. No headings. No bullet points. No author notes.)
 
 ===NEXT_CHAPTER_PACK===
 (Strict JSON that validates against pack.schema.json. No trailing commentary.)
+
+
+
+
