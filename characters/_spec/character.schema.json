@@ -1,4 +1,4 @@
-﻿{
+{
   "description": "Rule-based character profile schema for long-form serialized fiction. These files define behavioral parameters, not prose content.",
   "usage_rules": [
     "Do not quote or paraphrase this file in narrative output.",
@@ -10,7 +10,12 @@
   "fields": {
     "tier": {
       "type": "enum",
-      "allowed": ["S", "A", "B", "C"],
+      "allowed": [
+        "S",
+        "A",
+        "B",
+        "C"
+      ],
       "meaning": "Narrative importance tier; S-tier changes system state."
     },
     "story_function": {
@@ -31,7 +36,11 @@
     },
     "risk_bias": {
       "type": "enum",
-      "allowed": ["conservative", "balanced", "aggressive"],
+      "allowed": [
+        "conservative",
+        "balanced",
+        "aggressive"
+      ],
       "meaning": "Default risk tolerance before triggers are activated."
     },
     "trigger_sensitivities": {
@@ -46,12 +55,25 @@
     },
     "conflict_preferences": {
       "type": "array",
-      "items": ["rules", "information", "negotiation", "procedures", "violence", "proxy enforcement"],
+      "items": [
+        "rules",
+        "information",
+        "negotiation",
+        "procedures",
+        "violence",
+        "proxy enforcement"
+      ],
       "meaning": "Preferred methods of resolving conflict, in descending priority."
     },
     "cost_mechanism": {
       "type": "array",
-      "items": ["reputation", "law_attention", "relationship_damage", "evidence_risk", "moral_decay"],
+      "items": [
+        "reputation",
+        "law_attention",
+        "relationship_damage",
+        "evidence_risk",
+        "moral_decay"
+      ],
       "meaning": "Costs that must be paid when the character advances goals."
     },
     "relationship_forces": {
@@ -68,12 +90,51 @@
       "type": "string",
       "optional": true,
       "meaning": "Human-facing guidance; not required for generation."
+    },
+    "speech_profile": {
+      "type": "object",
+      "optional": true,
+      "meaning": "Character-specific dialogue signature for voice separation.",
+      "fields": {
+        "register_range": "array<string> (choose by scene pressure / counterpart / setting)",
+        "tempo_range": "array<string> (slow|medium|fast, selected by event intensity)",
+        "sentence_shape_range": "array<string> (short_clipped|balanced|long_periodic|fragmented)",
+        "swear_level_range": "array<string> (none|low|medium|high, bounded by current arc state)",
+        "humor_tolerance": "low|medium|high",
+        "allowed_devices": "array<string> (metaphor|ellipsis|rhetorical_question|irony...)",
+        "forbidden_devices": "array<string>",
+        "stress_drift_rules": "array<object> with condition -> voice_shift"
+      }
+    },
+    "arc_adaptation": {
+      "type": "object",
+      "optional": true,
+      "meaning": "Condition-based personality and voice evolution rules across chapters.",
+      "fields": {
+        "state_variables": "array<object> {name, range, init, update_hint}",
+        "event_impacts": "array<object> {condition, variable_delta, behavior_delta, voice_delta, cost_hint}",
+        "relationship_modulators": "array<object> {target, condition, interaction_shift}",
+        "phase_bias": "array<object> {phase, risk_bias_override, conflict_preference_shift}"
+      }
+    },
+    "plot_visibility_contract": {
+      "type": "object",
+      "optional": true,
+      "meaning": "Ensures both 明线 and 暗线 evolve with character behavior.",
+      "fields": {
+        "bright_line_duties": "array<string>",
+        "dark_line_duties": "array<string>",
+        "reveal_pace_constraints": "array<string>"
+      }
     }
   },
   "validation_checks": [
     "Every major action should align with risk_bias or a triggered deviation.",
     "Trigger activation must produce observable behavioral_tells.",
     "No character may advance without incurring a defined cost.",
+    "If speech_profile exists, select voice settings by conditions; avoid fixed catchphrase hard-coding.",
+    "If arc_adaptation exists, event impacts must update at least one state variable when major events occur.",
+    "If plot_visibility_contract exists, both bright-line and dark-line duties should appear within rolling chapters.",
     "Exit must respect exit_constraints and alter narrative structure."
   ]
 }

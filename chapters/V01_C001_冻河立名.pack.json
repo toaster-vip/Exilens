@@ -1,0 +1,41 @@
+{
+  "chapter_no": 1,
+  "chapter_title": "冻河立名",
+  "chapter_word_target": 2500,
+  "chapter_summary": "陈砚在腊月夜赶往老锅炉房后巷，正面夺回被扣车辆与过路钱，压住老驼背一方的截线行动。冲突中黑色帕萨特介入并以“给个面子”止损，显露更高层调度痕迹。陈砚夺得黑皮账夹后发现关键行被新近撕除，确认北线并非临时抢线而是提前清账。",
+  "timeline_updates": [
+    {"time_hint": "腊月夜", "event": "陈砚在后巷夺回北线钱车，线权暂稳。"},
+    {"time_hint": "同夜", "event": "账夹关键条目被撕，帕萨特匿名人物首次介入。"}
+  ],
+  "character_updates": [
+    {"name": "陈砚", "status_delta": "由被动应对转为规则执行", "secrets_gained": ["存在提前清账"], "relationships_delta": ["陈砚->一夫: 保护+1"]},
+    {"name": "一夫", "status_delta": "受伤在场，执行稳定", "secrets_gained": [], "relationships_delta": ["一夫->陈砚: 依赖+1"]}
+  ],
+  "org_updates": [
+    {"org": "北线车队", "change": "线权当夜保住，但渗透未清。"}
+  ],
+  "new_facts": [
+    "黑帕萨特匿名人物具备现场止冲突权力。",
+    "账夹条目被人为撕除。"
+  ],
+  "open_loops": [
+    {"id": "DL1-0001", "description": "主角旧案与背叛触发源未明", "priority": 2, "due_hint": "P1中段"},
+    {"id": "DL2-0001", "description": "幕后棋手推动关键节点冲突", "priority": 3, "due_hint": "P1末"},
+    {"id": "NK-0001", "description": "被撕名字是谁", "priority": 4, "due_hint": "2-4章"}
+  ],
+  "resolved_loops": [],
+  "next_chapter_plan": {
+    "goal": "通过录音与调度流程定位首个传播节点。",
+    "conflict": "证据可能已被清洗，执行层会撒谎。",
+    "beats": ["回收对讲录音", "识别静音剪口", "抓到执行环节人物", "找到残存物证"],
+    "pov_suggestions": ["陈砚", "一夫"],
+    "hook": "残页上的代号指向谁？"
+  },
+  "foreshadowing_tasks": ["埋入章通道线", "维持明暗线双推进"],
+  "risk_flags": ["需兑现冲突代价"],
+  "style_selfcheck": {
+    "ai_tells": [],
+    "concrete_details_used": ["黑冰后巷", "扳手", "账夹撕口"],
+    "dialogue_ratio_hint": "medium"
+  }
+}

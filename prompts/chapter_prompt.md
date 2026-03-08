@@ -1,4 +1,4 @@
-﻿# Novel Chapter Prompt
+# Novel Chapter Prompt
 
 You are writing the next chapter of a long-form serialized novel.
 
@@ -33,6 +33,10 @@ You MUST follow all hard constraints below. Do NOT explain. Do NOT output plans.
 Behavior enforcement:
 - If any trigger_sensitivities occurs for a character, their behavior MUST shift and MUST be observable via behavioral_tells.
 - Any meaningful advancement must pay at least one cost from cost_mechanism.
+- Dialogue must follow each character's speech_profile; major speakers must have clearly different voices in the same scene.
+- No interchangeable dialogue: if names are removed, readers should still infer who spoke by diction and rhythm.
+- Apply condition-based adaptation (arc_adaptation): major events should shift behavior/voice/state variables rather than fixed persona output.
+- Keep both bright-line and dark-line duties visible in rolling chapters; dark-line reveal pace must be layered.
 
 ---
 

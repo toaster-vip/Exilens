@@ -1,0 +1,32 @@
+{
+  "chapter_no": 3,
+  "chapter_title": "杜门旧账",
+  "chapter_word_target": 2500,
+  "chapter_summary": "周启明要求原始证据并施加程序压力。陈砚夜访回春堂，从杜万山口中确认白手套是堂口历史中的清账外包体系。杜万山提出北线三成入公账三个月，名义保命实则重设门槛。章节末抛出父辈关联，暗线A与暗线B正式并轨。",
+  "timeline_updates": [
+    {"time_hint": "当日下午", "event": "警线要求证据原件。"},
+    {"time_hint": "当夜", "event": "杜万山提出公账条件并提及主角父亲。"}
+  ],
+  "character_updates": [
+    {"name": "杜万山", "status_delta": "由背景势力转为规则施压者", "secrets_gained": [], "relationships_delta": ["杜万山->陈砚: 试探+1"]}
+  ],
+  "org_updates": [{"org": "杜门体系", "change": "以公账方式争夺北线风险控制权。"}],
+  "new_facts": ["白手套执行传口令/改流程/擦痕迹", "北线被要求三成入公账"],
+  "open_loops": [
+    {"id": "DL1-0001", "description": "主角旧案与背叛触发源未明", "priority": 2, "due_hint": "P1中段"},
+    {"id": "DL2-0001", "description": "幕后棋手推动关键节点冲突", "priority": 3, "due_hint": "P1末"},
+    {"id": "NK-0002", "description": "白手套-7K是人还是通道", "priority": 5, "due_hint": "4-6章"},
+    {"id": "NK-0003", "description": "主角父辈与杜门旧账实质", "priority": 5, "due_hint": "5-7章"}
+  ],
+  "resolved_loops": [],
+  "next_chapter_plan": {
+    "goal": "以双账本反钓内鬼并验证章通道。",
+    "conflict": "对方会借系统与临检回收假线。",
+    "beats": ["投喂黑皮假账", "临检触发", "口供复现", "物证上浮"],
+    "pov_suggestions": ["陈砚", "一夫"],
+    "hook": "‘许先生不见人，只见章’指向谁？"
+  },
+  "foreshadowing_tasks": ["引入许系章", "保持暗线分层"],
+  "risk_flags": ["需落地现实成本"],
+  "style_selfcheck": {"ai_tells": [], "concrete_details_used": ["倒扣茶杯", "风铃三响"], "dialogue_ratio_hint": "high"}
+}
