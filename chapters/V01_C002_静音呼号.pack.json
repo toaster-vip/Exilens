@@ -1,0 +1,32 @@
+{
+  "chapter_no": 2,
+  "chapter_title": "静音呼号",
+  "chapter_word_target": 2500,
+  "chapter_summary": "陈砚在仓库比对录音，确认1:27出现人为静音剪口；通过权限追查锁定调度员老满。老满供认收钱执行母卡替换，并受指令将线索误导向港城。旧厂区烧焦纸箱中翻出残页，出现“白手套-7K”代号，暗线从猜测进入可验证证据层。",
+  "timeline_updates": [
+    {"time_hint": "次日清晨", "event": "录音确认人为剪辑。"},
+    {"time_hint": "上午", "event": "老满供述并出现“白手套-7K”残页。"}
+  ],
+  "character_updates": [
+    {"name": "陈砚", "status_delta": "进入流程反查阶段", "secrets_gained": ["1:27窗口是预设"], "relationships_delta": ["陈砚->调度层: 信任-1"]}
+  ],
+  "org_updates": [{"org": "北线调度流程", "change": "被证实可被插针篡改。"}],
+  "new_facts": ["老满收2万改流程", "误导方向为港城", "出现白手套-7K代号"],
+  "open_loops": [
+    {"id": "DL1-0001", "description": "主角旧案与背叛触发源未明", "priority": 2, "due_hint": "P1中段"},
+    {"id": "DL2-0001", "description": "幕后棋手推动关键节点冲突", "priority": 3, "due_hint": "P1末"},
+    {"id": "NK-0001", "description": "被撕名字是谁", "priority": 4, "due_hint": "2-4章"},
+    {"id": "NK-0002", "description": "白手套-7K是人还是通道", "priority": 5, "due_hint": "3-5章"}
+  ],
+  "resolved_loops": [],
+  "next_chapter_plan": {
+    "goal": "验证白手套历史属性与杜门立场。",
+    "conflict": "警线索要原件，堂口索要代价。",
+    "beats": ["分局对话", "回春堂谈判", "公账条件", "父辈钩子"],
+    "pov_suggestions": ["陈砚"],
+    "hook": "杜门旧账为何牵到主角父亲？"
+  },
+  "foreshadowing_tasks": ["引入公账", "铺父辈线"],
+  "risk_flags": ["信息揭示节奏需分层"],
+  "style_selfcheck": {"ai_tells": [], "concrete_details_used": ["波形静音线", "烧焦残页"], "dialogue_ratio_hint": "medium"}
+}

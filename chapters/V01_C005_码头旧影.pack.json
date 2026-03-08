@@ -1,0 +1,32 @@
+{
+  "chapter_no": 5,
+  "chapter_title": "码头旧影",
+  "chapter_word_target": 2500,
+  "chapter_summary": "林岚核验许字章并回溯至十年前杜/许相关纠纷。陈砚在矿区老房子找到父亲旧照片与发霉账本，再到旧码头仓库对照出H-17记录：‘7K单，杜签，许收’。明线调查与暗线旧案完成实物级并轨。",
+  "timeline_updates": [
+    {"time_hint": "第四日黄昏", "event": "港城律师确认许字章与壳公司重叠。"},
+    {"time_hint": "第四日深夜", "event": "获取照片背字与H-17账页。"}
+  ],
+  "character_updates": [
+    {"name": "陈砚", "status_delta": "旧案由传闻进入实物证据阶段", "secrets_gained": ["父亲警示白手套", "H-17账页杜签许收"], "relationships_delta": ["陈砚->一夫: 信赖+1"]}
+  ],
+  "org_updates": [{"org": "港城壳公司链", "change": "海晟/远浦/澜禾成为上游候选节点。"}],
+  "new_facts": ["照片背字：别信穿白手套的人", "H-17账页出现7K单"],
+  "open_loops": [
+    {"id": "DL1-0001", "description": "主角旧案与背叛触发源未明", "priority": 2, "due_hint": "P1中段"},
+    {"id": "DL2-0001", "description": "幕后棋手推动关键节点冲突", "priority": 3, "due_hint": "P1末"},
+    {"id": "NK-0004", "description": "许字章与壳公司链如何相连", "priority": 5, "due_hint": "6章"},
+    {"id": "NK-0005", "description": "帕萨特人物真实身份", "priority": 4, "due_hint": "6-7章"}
+  ],
+  "resolved_loops": [],
+  "next_chapter_plan": {
+    "goal": "沿H-17与许字章追到可落地人名。",
+    "conflict": "上游开始回收证据，内部承压。",
+    "beats": ["法务图谱", "杜门摊牌", "越权后果", "帕萨特再现"],
+    "pov_suggestions": ["陈砚", "一夫"],
+    "hook": "车窗降下，男人第一次报了真姓。"
+  },
+  "foreshadowing_tasks": ["明暗线同步推进", "兑现代价机制"],
+  "risk_flags": ["控制信息密度"],
+  "style_selfcheck": {"ai_tells": [], "concrete_details_used": ["锈铁盒", "旧码头编号H-17"], "dialogue_ratio_hint": "medium"}
+}

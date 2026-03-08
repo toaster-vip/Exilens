@@ -1,4 +1,4 @@
-﻿{
+{
   "tier": "S",
   "story_function": "system stabilizer and loss-control decision maker",
   "power_position": "mid_to_high",
@@ -32,5 +32,119 @@
     "no clean victory without loss",
     "final position must retain a visible structural flaw"
   ],
-  "notes": "primary axis of cost vs control; growth expressed through narrowing acceptable losses"
+  "notes": "primary axis of cost vs control; growth expressed through narrowing acceptable losses",
+  "speech_profile": {
+    "register_range": [
+      "mixed",
+      "neutral"
+    ],
+    "tempo_range": [
+      "medium",
+      "medium"
+    ],
+    "sentence_shape_range": [
+      "balanced",
+      "balanced"
+    ],
+    "swear_level_range": [
+      "none",
+      "low"
+    ],
+    "humor_tolerance": "low",
+    "allowed_devices": [
+      "metaphor",
+      "rhetorical_question",
+      "ellipsis"
+    ],
+    "forbidden_devices": [
+      "fixed_catchphrase_loop",
+      "meta_exposition"
+    ],
+    "stress_drift_rules": [
+      {
+        "condition": "trigger_sensitivities activated",
+        "voice_shift": "tempo +1 level, sentence shorter or more fragmented"
+      },
+      {
+        "condition": "relationship trust drops",
+        "voice_shift": "explanations reduce, imperatives increase"
+      }
+    ]
+  },
+  "arc_adaptation": {
+    "state_variables": [
+      {
+        "name": "trust_in_system",
+        "range": "0-100",
+        "init": 55,
+        "update_hint": "drops after betrayal, recovers after verified cooperation"
+      },
+      {
+        "name": "loss_tolerance",
+        "range": "0-100",
+        "init": 50,
+        "update_hint": "rises under repeated pressure but triggers moral cost"
+      },
+      {
+        "name": "relation_heat_core_team",
+        "range": "-50 to 50",
+        "init": 10,
+        "update_hint": "changes by conflict, rescue, blame-shift"
+      }
+    ],
+    "event_impacts": [
+      {
+        "condition": "ally harmed because of strategic delay",
+        "variable_delta": "loss_tolerance +10, trust_in_system -8",
+        "behavior_delta": "risk_bias shifts one level aggressive for 1-2 chapters",
+        "voice_delta": "shorter sentences, lower patience",
+        "cost_hint": "relationship_damage"
+      },
+      {
+        "condition": "evidence chain succeeds without violence",
+        "variable_delta": "trust_in_system +6",
+        "behavior_delta": "conflict_preferences tilt toward rules/information",
+        "voice_delta": "more explanatory follow-through",
+        "cost_hint": "law_attention"
+      }
+    ],
+    "relationship_modulators": [
+      {
+        "target": "core_allies",
+        "condition": "publicly protected by character",
+        "interaction_shift": "trust +, contradiction in private not public"
+      },
+      {
+        "target": "authority_figures",
+        "condition": "rules perceived unfair",
+        "interaction_shift": "surface compliance, covert counterplay"
+      }
+    ],
+    "phase_bias": [
+      {
+        "phase": "P1_根基立名",
+        "risk_bias_override": "balanced->aggressive_on_trigger",
+        "conflict_preference_shift": "street survival + evidence collection"
+      },
+      {
+        "phase": "P2_跨省扩张",
+        "risk_bias_override": "balanced",
+        "conflict_preference_shift": "procedure and proxy usage increase"
+      }
+    ]
+  },
+  "plot_visibility_contract": {
+    "bright_line_duties": [
+      "推进当前现金流/地盘/组织目标",
+      "对当前冲突给出可验证行动结果"
+    ],
+    "dark_line_duties": [
+      "每2-3章回收或加深一次暗线证据",
+      "暗线信息不一次性揭晓，保持代价交换"
+    ],
+    "reveal_pace_constraints": [
+      "同章最多一个中等揭晓",
+      "重大身份揭晓前至少两次侧证"
+    ]
+  }
 }

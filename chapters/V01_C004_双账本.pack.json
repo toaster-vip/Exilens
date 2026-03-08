@@ -1,0 +1,32 @@
+{
+  "chapter_no": 4,
+  "chapter_title": "双账本",
+  "chapter_word_target": 2500,
+  "chapter_summary": "陈砚布置红真黑假双账本，成功触发假账外泄并在河堤临检中形成反钓闭环。口供重复“许先生不见人，只见章”，配合蓝油缺角章印，初步确认存在独立章通道。周启明交付半毁‘许’字方章，暗线证据进入实物层。",
+  "timeline_updates": [
+    {"time_hint": "第三日", "event": "双账本反钓触发临检与编号外泄。"},
+    {"time_hint": "当夜", "event": "获得半毁‘许’字方章。"}
+  ],
+  "character_updates": [
+    {"name": "周启明", "status_delta": "由制度施压转为有限投喂情报", "secrets_gained": [], "relationships_delta": ["周启明->陈砚: 利用+1"]}
+  ],
+  "org_updates": [{"org": "北线收账机制", "change": "升级双章并验以提高伪造成本。"}],
+  "new_facts": ["编号可提前入系统", "蓝油缺角章非杜门章", "许字物证出现"],
+  "open_loops": [
+    {"id": "DL1-0001", "description": "主角旧案与背叛触发源未明", "priority": 2, "due_hint": "P1中段"},
+    {"id": "DL2-0001", "description": "幕后棋手推动关键节点冲突", "priority": 3, "due_hint": "P1末"},
+    {"id": "NK-0003", "description": "主角父辈与杜门旧账实质", "priority": 5, "due_hint": "5-7章"},
+    {"id": "NK-0004", "description": "许字章与壳公司链如何相连", "priority": 5, "due_hint": "5-6章"}
+  ],
+  "resolved_loops": [],
+  "next_chapter_plan": {
+    "goal": "沿许字章追上游壳公司并核验父辈实物线索。",
+    "conflict": "证据回收与内部裂缝并发。",
+    "beats": ["港城律师核验", "老房子取旧物", "码头仓库对照", "H-17落地"],
+    "pov_suggestions": ["陈砚"],
+    "hook": "照片背字为何直指白手套？"
+  },
+  "foreshadowing_tasks": ["接入法务线", "兑现情感成本"],
+  "risk_flags": ["避免揭示过快"],
+  "style_selfcheck": {"ai_tells": [], "concrete_details_used": ["红黑账本", "蓝油缺角章"], "dialogue_ratio_hint": "medium"}
+}

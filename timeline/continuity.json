@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "0.1",
   "project": {
     "slug": "",
@@ -8,65 +8,243 @@
     "threads": 3
   },
   "progress": {
-    "current_chapter": 0,
-    "completed_chapters": [],
-    "estimated_total_words": 0,
+    "current_chapter": 5,
+    "completed_chapters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "estimated_total_words": 7600,
     "phase": "P1_根基立名"
   },
   "thread_index": [
-    { "id": "T1_main", "name": "主线：崛起与清盘", "status": "open" },
-    { "id": "T2_brotherhood", "name": "兄弟/情义线", "status": "open" },
-    { "id": "T3_law_capital", "name": "警线/资本线", "status": "open" }
+    {
+      "id": "T1_main",
+      "name": "主线：崛起与清盘",
+      "status": "open"
+    },
+    {
+      "id": "T2_brotherhood",
+      "name": "兄弟/情义线",
+      "status": "open"
+    },
+    {
+      "id": "T3_law_capital",
+      "name": "警线/资本线",
+      "status": "open"
+    }
   ],
   "timeline": [
-    { "t": "T0", "chapter": 0, "time_hint": "开局前", "event": "项目初始化：尚未发生章节事件" }
+    {
+      "t": "T0",
+      "chapter": 0,
+      "time_hint": "开局前",
+      "event": "项目初始化：尚未发生章节事件"
+    },
+    {
+      "t": "T1",
+      "chapter": 1,
+      "time_hint": "腊月夜",
+      "event": "陈砚后巷夺回北线钱车，账夹关键行被撕。"
+    },
+    {
+      "t": "T2",
+      "chapter": 2,
+      "time_hint": "次日清晨至上午",
+      "event": "确认1:27录音剪口并抓出老满，出现白手套-7K残页。"
+    },
+    {
+      "t": "T3",
+      "chapter": 3,
+      "time_hint": "当日下午至夜间",
+      "event": "杜万山提出北线三成公账，抛出父辈旧账钩子。"
+    },
+    {
+      "t": "T4",
+      "chapter": 4,
+      "time_hint": "第三日",
+      "event": "双账本反钓成功，获得半毁许字方章。"
+    },
+    {
+      "t": "T5",
+      "chapter": 5,
+      "time_hint": "第四日黄昏至深夜",
+      "event": "获得父亲照片背字与H-17账页，杜/许/7K实物并轨。"
+    }
   ],
   "open_loops": [
     {
       "id": "DL1-0001",
-      "description": "旧案/身世线：主角对背叛的极端反应来源未明",
+      "description": "主角旧案与背叛触发源未明",
       "priority": 2,
-      "due_hint": "P1中段首次具象化线索"
+      "due_hint": "P1中段"
     },
     {
       "id": "DL2-0001",
-      "description": "幕后棋手线：关键节点总有人提前得到消息",
+      "description": "幕后棋手推动关键节点冲突",
       "priority": 3,
-      "due_hint": "P1末或P2开局出现可验证证据"
+      "due_hint": "P1末"
+    },
+    {
+      "id": "NK-0004",
+      "description": "许字章与壳公司链如何相连",
+      "priority": 5,
+      "due_hint": "第6章"
+    },
+    {
+      "id": "NK-0005",
+      "description": "帕萨特人物真实身份",
+      "priority": 4,
+      "due_hint": "第6-7章"
     }
   ],
   "resolved_loops": [],
   "character_index": {
     "S": {
-      "protagonist": { "name": "陈砚", "status": "开局", "tags": ["止损者"], "last_seen_chapter": 0, "notes": "" },
-      "yifu": { "name": "一夫", "status": "开局", "tags": ["情绪放大器"], "last_seen_chapter": 0, "notes": "" },
-      "strategist": { "name": "沈知节", "status": "未正式入场", "tags": ["系统建造者"], "last_seen_chapter": 0, "notes": "" },
-      "oldboss": { "name": "杜万山", "status": "未正式入场", "tags": ["老规矩门槛"], "last_seen_chapter": 0, "notes": "" },
-      "capital_proxy": { "name": "许竞舟", "status": "未显影", "tags": ["规则武器化"], "last_seen_chapter": 0, "notes": "" }
+      "protagonist": {
+        "name": "陈砚",
+        "status": "旧案物证入手（H-17）",
+        "tags": [
+          "止损者"
+        ],
+        "last_seen_chapter": 5,
+        "notes": "触发家人敏感后决策提速，开始上探杜/许历史链。"
+      },
+      "yifu": {
+        "name": "一夫",
+        "status": "守线执行中，冲动可控但临界",
+        "tags": [
+          "情绪放大器"
+        ],
+        "last_seen_chapter": 5,
+        "notes": "执行排查有效，仍有越权风险。"
+      },
+      "strategist": {
+        "name": "沈知节",
+        "status": "未正式入场",
+        "tags": [
+          "系统建造者"
+        ],
+        "last_seen_chapter": 0,
+        "notes": ""
+      },
+      "oldboss": {
+        "name": "杜万山",
+        "status": "规则施压在场",
+        "tags": [
+          "老规矩门槛"
+        ],
+        "last_seen_chapter": 3,
+        "notes": "提出三成公账条件并释放父辈旧账钩子。"
+      },
+      "capital_proxy": {
+        "name": "许竞舟",
+        "status": "未显影（许系章侧证出现）",
+        "tags": [
+          "规则武器化"
+        ],
+        "last_seen_chapter": 0,
+        "notes": "通过章通道与壳公司链间接显影。"
+      }
     },
-    "A": {}
+    "A": {
+      "lawyer_portcity": {
+        "name": "林岚",
+        "status": "正式入场",
+        "tags": [
+          "港城法务通道"
+        ],
+        "last_seen_chapter": 5,
+        "notes": "提供许系章与壳公司核验。"
+      }
+    }
   },
   "org_index": {},
   "location_index": {
     "current_arena": "煤城",
-    "known_places": ["煤城", "钢城", "冰城", "港城", "关城"]
+    "known_places": [
+      "煤城",
+      "钢城",
+      "冰城",
+      "港城",
+      "关城"
+    ]
   },
   "planner": {
     "next_chapter": {
-      "goal": "",
-      "conflict": "",
-      "beats": [],
-      "pov_suggestions": [],
-      "hook": ""
+      "goal": "沿H-17与许字章追到可落地人名。",
+      "conflict": "上游开始证据回收，内部承压并可能越权。",
+      "beats": [
+        "法务图谱落地",
+        "杜门摊牌",
+        "一夫越权后果",
+        "帕萨特人物再现"
+      ],
+      "pov_suggestions": [
+        "陈砚",
+        "一夫"
+      ],
+      "hook": "车窗降下，男人第一次报了真姓。"
     },
     "thread_budget": {
       "max_threads_per_chapter": 2,
-      "preferred_threads": ["T1_main", "T2_brotherhood"]
+      "preferred_threads": [
+        "T1_main",
+        "T2_brotherhood"
+      ]
     }
   },
   "recent": {
-    "last_chapter_summary": "",
-    "last_open_loops_used": [],
-    "last_new_facts": []
+    "last_chapter_summary": "陈砚在老房子与旧码头拿到照片背字与H-17账页，许字章线从代号推进到实物证据。",
+    "last_open_loops_used": [
+      "DL1-0001",
+      "DL2-0001"
+    ],
+    "last_new_facts": [
+      "白手套-7K残页",
+      "半毁许字方章",
+      "H-17账页杜签许收"
+    ]
+  },
+  "adaptive_state": {
+    "character_variables": {
+      "protagonist": {
+        "trust_in_system": 46,
+        "loss_tolerance": 62,
+        "relation_heat_core_team": 14,
+        "last_update_chapter": 5
+      },
+      "yifu": {
+        "trust_in_system": 40,
+        "loss_tolerance": 68,
+        "relation_heat_core_team": 22,
+        "last_update_chapter": 5
+      },
+      "strategist": {
+        "trust_in_system": 58,
+        "loss_tolerance": 44,
+        "relation_heat_core_team": -6,
+        "last_update_chapter": 0
+      },
+      "oldboss": {
+        "trust_in_system": 52,
+        "loss_tolerance": 71,
+        "relation_heat_core_team": 8,
+        "last_update_chapter": 3
+      },
+      "capital_proxy": {
+        "trust_in_system": 64,
+        "loss_tolerance": 55,
+        "relation_heat_core_team": -12,
+        "last_update_chapter": 0
+      }
+    },
+    "chapter_contract": {
+      "major_event_requires_state_update": true,
+      "max_chapters_without_darkline_progress": 2,
+      "voice_shift_window_chapters": 2
+    }
   }
 }
